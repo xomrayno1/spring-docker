@@ -25,3 +25,12 @@ docker run --rm \
 --network mysqlnet \
 -e MYSQL_URL=jdbc:mysql://mysqlserver/petclinic \
 -e MYSQL_ROOT_PASSWORD=root -p 8080:8080 spring-docker:v0.1.1
+
+
+##
+
+  docker run --rm -d \
+--name springboot-server \
+--network mysqlnet \
+-e MYSQL_URL=jdbc:mysql://mysqlserver/crm \
+-p 8080:8080 spring-docker:v0.0.4
