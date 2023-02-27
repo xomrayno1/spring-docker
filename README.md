@@ -37,4 +37,4 @@ docker run --rm \
 -p 8080:8080 spring-docker:v0.0.4
 
 
-spring-docker % docker-compose -f docker-compose.dev.yml up --build
+docker-compose -f docker-compose.dev.yml up --build
