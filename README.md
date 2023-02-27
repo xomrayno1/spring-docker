@@ -35,3 +35,6 @@ docker run --rm \
 -e MYSQL_URL=jdbc:mysql://mysqlserver/crm \
 -e MYSQL_ROOT_PASSWORD=root \
 -p 8080:8080 spring-docker:v0.0.4
+
+
+spring-docker % docker-compose -f docker-compose.dev.yml up --build
